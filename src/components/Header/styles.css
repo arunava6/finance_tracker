@@ -1,0 +1,149 @@
+/* .navbar{
+    background-color: var(--theme);
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+}
+.link{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.link:hover{
+    opacity: 1;
+    transition: all 0.3s;
+} */
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: var(--theme);
+  padding: 1.5rem 2rem;
+  /* Increased padding for spacious look */
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  z-index: 1000;
+  /* Ensure navbar stays above content */
+}
+
+.logo {
+  color: var(--white);
+  font-weight: 700;
+  /* Bolder for prominence */
+  font-size: 1.5rem;
+  /* Increased from 1rem */
+  margin: 0;
+  letter-spacing: 0.5px;
+  /* Slight spacing for modern look */
+}
+
+.link {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.2rem;
+  /* Increased for visibility */
+  opacity: 0.8;
+  cursor: pointer;
+  position: relative;
+  /* For underline animation */
+  transition: all 0.3s ease;
+  /* Smooth transition */
+}
+
+.link:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  /* Slight scale on hover */
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--white);
+  transition: width 0.3s ease;
+  /* Underline animation */
+}
+
+.link:hover::after {
+  width: 100%;
+  /* Underline expands on hover */
+}
+
+.input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.label-input {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.custom-input {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.custom-input:focus {
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+  border-bottom-color: var(--theme);
+}
+
+.custom-input::placeholder {
+  color: grey;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.password-toggle-icon:hover {
+  color: #333;
+}
+
+.name-input {
+  text-transform: capitalize;
+}

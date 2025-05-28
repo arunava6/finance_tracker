@@ -1,0 +1,54 @@
+
+
+.input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.label-input {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container {
+  position: relative;
+  width: 95%;
+}
+
+.custom-input {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0; /* Right padding for icon */
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.custom-input:focus {
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+  border-bottom-color: var(--theme); /* Ensure --theme is defined */
+}
+
+.custom-input::placeholder {
+  color: grey;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 0;
+  bottom: 8px; /* Align with input text baseline */
+  cursor: pointer;
+  font-size: 16px; /* Slightly smaller to match font-size: 0.8rem */
+  color: #666;
+}
+
+.password-toggle-icon:hover {
+  color: #333;
+}
+.name-input {
+  text-transform: capitalize; 
+}
