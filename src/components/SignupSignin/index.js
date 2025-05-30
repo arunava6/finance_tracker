@@ -188,7 +188,7 @@ function SignupSigninComponent() {
       {loginForm ? (
         <div className='signup-wrapper'>
           <h2 className='title'>
-            Login On <span style={{ color: "var(--theme)" }}>Financely</span>
+            Login On <span style={{ color: "var(--theme)" }}>BudgetNest</span>
           </h2>
           <form>
             <Input
@@ -222,7 +222,7 @@ function SignupSigninComponent() {
       ) : (
         <div className='signup-wrapper'>
           <h2 className='title'>
-            Sign Up on <span style={{ color: "var(--theme)" }}>Financely</span>
+            Sign Up on <span style={{ color: "var(--theme)" }}>BudgetNest</span>
           </h2>
           <form>
             <Input

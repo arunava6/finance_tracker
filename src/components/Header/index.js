@@ -87,7 +87,7 @@ function Header() {
 
   return (
     <div className='navbar'>
-      <p className='logo'>Financely</p>
+      <p className='logo'>BudgetNest</p>
       {user && (
         <div style={{ display: "flex", alignItems: "center", gap: "0.7rem" }}>
           <img
