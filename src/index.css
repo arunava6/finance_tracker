@@ -7,6 +7,13 @@
   --shadow: 0px 0px 30px 8px rgba(227,227,227,0.75);
   
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -69,4 +76,29 @@ input{
 
 .select-input > div {
   border: 0px solid #fff !important;
+}
+
+
+.spinner-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #eee;
+  border-top: 8px solid #4f46e5; /* Use your theme color */
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }

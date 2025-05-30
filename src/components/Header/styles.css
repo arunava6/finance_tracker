@@ -147,3 +147,34 @@
 .name-input {
   text-transform: capitalize;
 }
+
+
+
+
+
+
+
+.logout-btn {
+  background: rgba(255,255,255,0.90);   /* Almost white, slightly transparent */
+  color: var(--theme);                  /* Use your theme color for text */
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.35rem 1.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logout-btn:hover, .logout-btn:focus {
+  background: var(--white);            /* Pure white on hover */
+  color: #111;                         /* Even darker text for contrast */
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}

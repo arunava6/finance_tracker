@@ -45,14 +45,12 @@ function TransactionsTable({ transactions, addTransaction, fetchTransactions }) 
     // );
 
     const filteredTransactions = transactions.filter((transaction) => {
-        const searchMatch = searchTerm
-            ? transaction.name.toLowerCase().includes(searchTerm.toLowerCase())
-            : true;
+        const searchMatch = search ? transaction.name.toLowerCase().includes(search.toLowerCase()) : true;
         const tagMatch = selectedTag ? transaction.tag === selectedTag : true;
         const typeMatch = typeFilter ? transaction.type === typeFilter : true;
-
         return searchMatch && tagMatch && typeMatch;
     });
+
 
     // let filteredTransactions = transactions.filter((item) =>
     //         item.name && item.type && 
